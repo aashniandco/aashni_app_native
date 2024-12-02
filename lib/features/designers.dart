@@ -133,7 +133,7 @@ class _DesignersScreenState extends State<DesignersScreen> {
       onChanged: _filterDesigners,
       decoration: InputDecoration(
         hintText: "Search designers...",
-        prefixIcon: const Icon(Icons.search),
+        prefixIcon: const Icon(Icons.search), 
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
         ),
