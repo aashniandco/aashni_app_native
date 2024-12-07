@@ -1,9 +1,13 @@
 import 'package:aashni_app/bloc/login/login_screen_bloc.dart';
+import 'package:aashni_app/features/accessories/accessories.dart';
 import 'package:aashni_app/features/auth/view/auth_screen.dart';
 import 'package:aashni_app/features/auth/view/signup_screen.dart';
 import 'package:aashni_app/features/categories/view/categories_screen.dart';
+import 'package:aashni_app/features/categories/view/menu_categories_screen.dart';
+import 'package:aashni_app/features/auth/view/auth_screen.dart';
+import 'package:aashni_app/prac/count.dart';
 import 'package:flutter/material.dart';
-
+import 'package:aashni_app/features/auth/view/auth_screen.dart';
 import 'theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -14,8 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aashni + Co',
       theme: AppTheme.lightTheme,
-      home: const AuthScreen(),
-      //  home:  LoginScreen(),
+      // home: AuthScreen(), 
+       // No need for ambiguity now
+        home: Counter(), 
     );
   }
 }

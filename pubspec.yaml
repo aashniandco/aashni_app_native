@@ -44,6 +44,7 @@ dev_dependencies:
   flutter_bloc: 
   http:
   share_plus: ^10.1.2
+  image_picker: 
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -91,6 +92,7 @@ flutter:
     - assets/kids.png
     - assets/asuka_blazer.png
     - assets/size_chart.png
+    - assets/bg_cards.jpg
 
   #   - images/a_dot_ham.jpeg
 

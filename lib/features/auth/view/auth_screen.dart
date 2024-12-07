@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:aashni_app/common/dialog.dart';
+import 'package:aashni_app/features/accessories/accessories.dart';
 import 'package:aashni_app/features/auth/view/login_screen.dart';
 import 'package:aashni_app/features/categories/view/categories_screen.dart';
 import 'package:aashni_app/features/auth/view/wishlist_screen.dart';
@@ -62,6 +64,10 @@ class AuthScreen extends ConsumerWidget {
             IconButton(
               icon: const Icon(Icons.search),
               onPressed: () {
+                  showDialog(
+                  context: context,
+                  builder: (BuildContext context) => const SearchScreen(),
+                );
                 print("Search clicked");
               },
             ),
@@ -82,7 +88,8 @@ class AuthScreen extends ConsumerWidget {
                   CategoriesPage(),
 
                   // _buildTabContent("Categories Content"),
-                  _buildTabContent("Accessories Content"),
+                  // _buildTabContent("Accessories Content"),
+                  Accessories(),
                   // _buildTabContent("Designers Content"),
                   DesignersScreen()
                 ],
@@ -108,7 +115,7 @@ class AuthScreen extends ConsumerWidget {
                   MaterialPageRoute(builder: (context) => const WishlistScreen()),
                   (Route<dynamic> route) => false,
                 );
-                break;
+                break;             
               case 2:
                 Navigator.pushAndRemoveUntil(
                   context,

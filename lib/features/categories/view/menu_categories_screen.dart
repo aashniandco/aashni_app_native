@@ -191,6 +191,7 @@ class ShopByCategoryScreen extends StatelessWidget {
     required List<Widget> children,
   }) {
     return Card(
+      
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
       child: ExpansionTile(
